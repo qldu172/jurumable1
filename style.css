@@ -1,0 +1,55 @@
+body {
+  background-color: #222;
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+#game-container {
+  display: inline-block;
+}
+
+#board {
+  position: relative;
+  display: inline-block;
+}
+
+#background {
+  width: 1000px; /* 보드판 크기 맞춰 조정해도 돼 */
+}
+
+#tiles {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tile-button {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.tile-button:hover {
+  border-color: #fff;
+}
+
+#control-panel {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #f0c040;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
