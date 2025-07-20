@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>주루마블 - 솔라씨 에디션</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<div id="game-container">
+
+  <div id="board">
+    <img src="images/board_custom.png" id="background">
+
+    <div id="tiles">
+      <!-- 칸은 여기 복붙해서 추가하면 돼! -->
+      <button class="tile-button" style="left: 60px; top: 60px;" onclick="alert('1번 칸!')"></button>
+      <button class="tile-button" style="left: 120px; top: 60px;" onclick="alert('2번 칸!')"></button>
+      <button class="tile-button" style="left: 180px; top: 60px;" onclick="alert('3번 칸!')"></button>
+      <button class="tile-button" style="left: 240px; top: 60px;" onclick="alert('4번 칸!')"></button>
+    </div>
+
+  </div>
+
+  <div id="control-panel">
+    <input type="text" id="player-name" placeholder="참가자 이름">
+    <button onclick="startGame()">게임 시작</button>
+    <button onclick="rollDice()">🎲 주사위 굴리기</button>
+  </div>
+
+  <div id="event-popup"></div>
+
+</div>
+
+</body>
+</html>
